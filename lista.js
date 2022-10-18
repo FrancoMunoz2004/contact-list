@@ -1,17 +1,30 @@
-let lista = ["Franco Muñoz", "Luis Hernandez", "Robert Barrios"];
+let contactos = ["Franco Muñoz", "Luis Hernandez", "Robert Barrios"];
 
-function añadir(lista) {
-    lista = lista.push("Robert Barrios");
+function añadir(contactos) {
+    contactos = contactos.push("CamiloBarrios");
 }
-añadir(lista);
+añadir(contactos);
 
-function borrar(lista){
-    lista=lista.splice(1,1);
+function borrar(contactos){
+    contactos=contactos.splice(1,1);
 }
-borrar(lista);
+borrar(contactos);
 
-function imprimir(lista){
-    return lista;
+function imprimir(contactos){
+    return contactos;
+    
 }
+console.log(contactos);
 
-console.log(lista);
+
+function actualizar(contactos){
+     contactos = ['CAROLINA', 'MARIA'];
+
+console.log(contactos);
+
+contactos[0] = 'BERTA';
+
+console.log(contactos);
+
+}
+actualizar(contactos);
